@@ -1,3 +1,8 @@
+$font-main: 'Lato', sans-serif;
+$dark-blue: #3B7397;
+$white: #FFFFFF;
+$gray20: #333333;
+
 body {
   font-size: 16px;
   line-height: 1;
@@ -14,13 +19,13 @@ body {
   line-height: 16px;
   font-size: 16px;
   text-align: center;
-  font-family: 'Lato';
+  font-family: $font-main;
   font-style: normal;
-  color: #FFFFFF;
+  color: $white;
   padding: 1em 1.5em;
   margin-left: 0.5em;
   margin-right: 0.5em;
-  background-color: #3B7397;
+  background-color: $dark-blue;
   &:first-child {
     margin-left: 0;
   }
@@ -29,7 +34,7 @@ body {
   }
   &__transparent {
     background-color: transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid $white;
   }
   &__padding-longeg {
     padding-left: 3.5em;
@@ -44,12 +49,12 @@ body {
   line-height: 16px;
   font-size: 16px;
   text-align: center;
-  font-family: 'Lato';
+  font-family: $font-main;
   font-style: normal;
-  color: #FFFFFF;
+  color: $white;
   padding: 1em 6em;
   border: none;
-  background-color: #3B7397;
+  background-color: $dark-blue;
   &:focus {
     outline: none;
   }
@@ -58,7 +63,7 @@ body {
 .site-input {
   position: relative;
   margin-bottom: 30px;
-  font-family: 'Lato';
+  font-family: $font-main;
   input {
     background-color: transparent;
   }
@@ -104,7 +109,7 @@ body {
     &:valid + label {
       top: -10px;
       font-size: 12px;
-      color: #3B7397;
+      color: $dark-blue;
     }
 
     &:focus ~ .input-bar:before,
@@ -112,7 +117,7 @@ body {
     &:valid ~ .input-bar:before,
     &:valid ~ .input-bar:after {
       width: 51%;
-      background: #3B7397;
+      background: $dark-blue;
       border-bottom: 0px;
     }
   }
@@ -128,7 +133,7 @@ body {
       width: 0px;
       position: absolute;
       bottom: 0.5px;
-      background: #3B7397;
+      background: $dark-blue;
       transition: 0.2s ease all;
       -moz-transition: 0.2s ease all;
       -webkit-transition: 0.2s ease all;
@@ -211,9 +216,9 @@ body {
     }
     &_primary-text,
     &_secondary-text {
-      font-family: 'Lato';
+      font-family: $font-main;
       font-style: normal;
-      color: #FFFFFF;
+      color: $white;
     }
     &_primary-text {
       font-weight: 300;
@@ -244,7 +249,7 @@ body {
     font-weight: normal;
     line-height: 34px;
     font-size: 33px;
-    color: #333333;
+    color: $gray20;
     margin-bottom: 1em;
     &:after {
       content: '';
@@ -253,7 +258,7 @@ body {
       width: 35px;
       height: 4px;
       top: 130%;
-      background: #3B7397;
+      background: $dark-blue;
       border-radius: 5px;
     }
   }
@@ -264,7 +269,7 @@ body {
     font-weight: normal;
     line-height: 27px;
     font-size: 16px;
-    color: #333333;
+    color: $gray20;
   }
 }
 
@@ -326,7 +331,7 @@ body {
       line-height: 40px;
       font-size: 24px;
       margin: 0;
-      color: #FFFFFF;
+      color: $white;
     }
     &_description {
       font-family: Lato;
@@ -335,7 +340,7 @@ body {
       line-height: 27px;
       font-size: 16px;
 
-      color: #FFFFFF;
+      color: $white;
     }
   }
 }
@@ -374,7 +379,7 @@ body {
       line-height: 27px;
       font-size: 16px;
 
-      color: #333333;
+      color: $gray20;
     }
   }
 }
@@ -386,7 +391,7 @@ body {
     align-items: baseline;
     width: 50%;
     i {
-      color: #333333;
+      color: $gray20;
     }
     p {
       margin-left: 1em;
@@ -395,7 +400,7 @@ body {
       font-weight: normal;
       line-height: 27px;
       font-size: 16px;
-      color: #333333;
+      color: $gray20;
     }
   }
 }
