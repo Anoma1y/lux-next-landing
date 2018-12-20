@@ -1,0 +1,37 @@
+@import "vars";
+
+.hwl {
+  &-list {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+  }
+  &-item {
+    flex: 1 1 374px;
+    height: 238px;
+    position: relative;
+    margin-left: 1em;
+    margin-right: 1em;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &_title {
+      font-weight: normal;
+      line-height: 40px;
+      font-size: 24px;
+
+      color: #000000;
+    }
+    &_description {
+      font-weight: normal;
+      line-height: 27px;
+      font-size: 16px;
+
+      color: $gray20;
+    }
+  }
+}
+

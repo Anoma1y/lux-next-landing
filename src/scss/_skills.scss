@@ -1,0 +1,65 @@
+@import "vars";
+
+.skills {
+  &-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0 5em;
+  }
+  &-item {
+    flex: 1 1 374px;
+    height: 238px;
+    position: relative;
+    margin-left: 0.625em;
+    margin-right: 0.625em;
+    border-radius: 1em;
+    overflow: hidden;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &_bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &_overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(35, 32, 38, 0.69), rgba(35, 32, 38, 0.69));
+    }
+    &_content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 1em 1.5em;
+    }
+    &_title {
+      font-weight: 500;
+      line-height: 40px;
+      font-size: 24px;
+      margin: 0;
+      color: $white;
+    }
+    &_description {
+      font-weight: normal;
+      line-height: 27px;
+      font-size: 16px;
+
+      color: $white;
+    }
+  }
+}
