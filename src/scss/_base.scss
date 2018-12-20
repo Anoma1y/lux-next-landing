@@ -54,31 +54,32 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .section {
   &-container {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   &_content {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
   &_title {
     position: relative;
     font-weight: normal;
     font-size: 33px;
     color: $gray20;
+    margin-bottom: 1em;
     &:after {
       content: '';
       display: block;
       position: absolute;
       width: 35px;
       height: 4px;
-      top: 130%;
+      bottom: -17px;
       background: $dark-blue;
       border-radius: 5px;
     }
   }
   &_text {
-    margin: 2em 0;
+    margin: 1.4375em 0;
     font-weight: normal;
     line-height: 27px;
     font-size: 16px;
