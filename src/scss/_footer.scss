@@ -8,5 +8,9 @@
     line-height: normal;
     font-size: 14px;
     color: #808080;
+    @media (max-width: $break-xs) {
+      text-align: center;
+      font-size: 13px;
+    }
   }
 }

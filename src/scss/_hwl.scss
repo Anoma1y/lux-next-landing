@@ -5,10 +5,13 @@
     display: flex;
     justify-content: space-around;
     padding-top: 1em;
+    @media (max-width: $break-xs) {
+      justify-content: flex-start;
+      flex-flow: column wrap;
+    }
   }
   &-item {
     flex: 1 1 374px;
-    height: 238px;
     position: relative;
     margin-left: 1em;
     margin-right: 1em;
@@ -18,15 +21,33 @@
     &:last-child {
       margin-right: 0;
     }
+    @media (max-width: $break-xs) {
+      flex: 1 1 100%;
+      margin: 1em 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     &_title {
       line-height: 40px;
       font-size: 1.5em;
       color: $gray20;
+      @media (max-width: $break-xs) {
+        line-height: 34px;
+        font-size: 20px;
+      }
     }
     &_description {
       line-height: 27px;
       font-size: 1em;
       color: $gray20;
+      @media (max-width: $break-xs) {
+        line-height: 24px;
+        font-size: 14px;
+      }
     }
   }
 }
