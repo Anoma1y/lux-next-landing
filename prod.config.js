@@ -5,6 +5,7 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 const WebpackMd5Hash = require("webpack-md5-hash");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
+
 module.exports = require("./base.config")({
   mode: "production",
   entry: [
