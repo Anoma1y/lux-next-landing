@@ -29,7 +29,6 @@
     "number-leading-zero": "never",
 
     "string-no-newline": true,
-    "string-quotes": "double",
 
     "length-zero-no-unit": true,
 
@@ -103,7 +102,7 @@
 
     "indentation": 2,
     "max-empty-lines": 2,
-    "max-nesting-depth": 4,
+    "max-nesting-depth": 5,
     "no-duplicate-selectors": true,
     "no-extra-semicolons": true,
     "no-unknown-animations": true

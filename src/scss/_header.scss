@@ -10,7 +10,8 @@
   &-logo {
     position: absolute;
     top: -9.5rem;
-    left: 2rem;
+    //left: 2rem;
+    width: 100%;
     transition: top .1s linear;
     @media (max-height: 700px) {
       top: -7.5em;
@@ -18,9 +19,18 @@
     @media (max-height: 620px) {
       top: -5.5em;
     }
-    @media (max-width: $break-xs) {
-      left: 20px;
-    }
+    //@media (min-width: $break-sm) and (max-width: $break-md) {
+    //  left: 7rem;
+    //}
+    //@media (max-width: $break-lg) {
+    //  left: 7rem;
+    //}
+    //@media (max-width: $break-xs) {
+    //  left: 2rem;
+    //}
+    //@media (max-width: $break-xs) {
+    //  left: 20px;
+    //}
 
     &_img {
       width: 175px;
@@ -94,9 +104,17 @@
       line-height: 65px;
       font-size: 64px;
       margin: 0;
+      @media (max-width: $break-md) {
+        line-height: 59px;
+        font-size: 58px;
+      }
+      @media (max-width: $break-sm) {
+        line-height: 46px;
+        font-size: 45px;
+      }
       @media (max-width: $break-xs) {
-        font-size: 36px;
         line-height: 37px;
+        font-size: 36px;
       }
     }
 
@@ -106,6 +124,10 @@
       font-size: 16px;
       margin-top: 1em;
       margin-bottom: 1em;
+      @media (max-width: $break-sm) {
+        line-height: 23px;
+        font-size: 15px;
+      }
       @media (max-width: $break-xs) {
         line-height: 22px;
         font-size: 14px;
@@ -115,9 +137,28 @@
     &_buttons {
       margin-top: 2.5em;
 
-      a {
-        @media (max-width: $break-xs) {
+      @media (max-width: $break-xs) {
+        display: flex;
+        justify-content: center;
+
+        a {
           font-size: 14px;
+        }
+      }
+      @media (max-width: 440px) {
+        flex-flow: column;
+
+        a {
+          margin: .5rem 0;
+          font-size: 13px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
       }
     }
