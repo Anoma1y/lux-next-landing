@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-around;
     padding: 2em 0 5em;
+    @media (max-width: $break-sm) {
+      flex-flow: column wrap;
+    }
   }
   &-item {
     flex: 1 1 374px;
@@ -19,6 +22,12 @@
     }
     &:last-child {
       margin-right: 0;
+    }
+    @media (max-width: $break-sm) {
+      flex: 1 1 100%;
+      margin: 0;
+      min-height: 150px;
+      height: 100%;
     }
     &_bg {
       position: absolute;
