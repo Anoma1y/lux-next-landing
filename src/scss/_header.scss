@@ -116,6 +116,10 @@
         line-height: 37px;
         font-size: 36px;
       }
+      @media (max-width: 440px) {
+        line-height: 31px;
+        font-size: 30px;
+      }
     }
 
     &_secondary-text {
@@ -132,6 +136,10 @@
         line-height: 22px;
         font-size: 14px;
       }
+      @media (max-width: 440px) {
+        line-height: 20px;
+        font-size: 12px;
+      }
     }
 
     &_buttons {
@@ -147,9 +155,11 @@
       }
       @media (max-width: 440px) {
         flex-flow: column;
+        margin-top: 2rem;
 
         a {
           margin: .5rem 0;
+          padding: .8rem 1rem;
           font-size: 13px;
 
           &:first-child {
