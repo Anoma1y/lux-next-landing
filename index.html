@@ -19,13 +19,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
       type="text/css"
     />
+    <link rel="stylesheet" href=".<%=htmlWebpackPlugin.files.chunks.main.css %>">
   </head>
   <body>
     <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
     <header class="header">
-      <div class="header-bg" data-src="/static/img/background.jpg"></div>
+      <div class="header-bg" data-src="assets/img/background.jpg"></div>
       <div class="header-overlay"></div>
       <div class="header-content">
         <div class="wrapper">
@@ -33,7 +34,7 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-12 col-lg-offset-0">
-                  <img src="./static/img/logo.svg" class="header-logo_img" alt="Logo" />
+                  <img src="assets/img/logo.svg" class="header-logo_img" alt="Logo" />
                 </div>
               </div>
             </div>
@@ -105,7 +106,7 @@
           </div>
           <div class="skills-list">
             <div class="skills-item">
-              <div class="skills-item_bg" style="background-image: url('/static/img/mobile-skill.png')"></div>
+              <div class="skills-item_bg" style="background-image: url('assets/img/mobile-skill.png')"></div>
               <div class="skills-item_overlay"></div>
               <div class="skills-item_content">
                 <h3 class="skills-item_title">Mobile apps</h3>
@@ -115,7 +116,7 @@
               </div>
             </div>
             <div class="skills-item">
-              <div class="skills-item_bg" style="background-image: url('/static/img/web-skill.png')"></div>
+              <div class="skills-item_bg" style="background-image: url('assets/img/web-skill.png')"></div>
               <div class="skills-item_overlay"></div>
               <div class="skills-item_content">
                 <h3 class="skills-item_title">Web development</h3>
@@ -126,7 +127,7 @@
               </div>
             </div>
             <div class="skills-item">
-              <div class="skills-item_bg" style="background-image: url('/static/img/support-skill.png')"></div>
+              <div class="skills-item_bg" style="background-image: url('assets/img/support-skill.png')"></div>
               <div class="skills-item_overlay"></div>
               <div class="skills-item_content">
                 <h3 class="skills-item_title">Outsource team support</h3>
@@ -301,5 +302,8 @@
       </div>
     </footer>
     <!-- FOOTER END -->
+
+    <script src=".<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
   </body>
 </html>

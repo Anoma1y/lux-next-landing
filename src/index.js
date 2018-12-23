@@ -1,3 +1,5 @@
+import "../assets/scss/style.scss";
+
 const init = () => {
   const dataSrc = document.querySelectorAll('div[data-src]');
   const bgStyle = "background-image: url({url}); animation-name: fade; animation-duration: 1s";

@@ -4,6 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --env=production --config=prod.config.js --mode=production --color -p --progress --hide-modules --display-optimization-bailout",
     "dev": "webpack-dev-server --env=development --config=./dev.config.js --mode=development",
     "prettify": "prettier --write src/**",
     "lint:css": "stylelint 'src/scss/**'",
@@ -16,6 +17,9 @@
     "@babel/preset-env": "^7.2.3",
     "autoprefixer": "^9.4.3",
     "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "cross-env": "^5.2.0",
     "css-loader": "^2.0.1",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
@@ -34,7 +38,8 @@
     "webpack-cli": "^3.1.2",
     "webpack-dev-middleware": "^3.4.0",
     "webpack-dev-server": "^3.1.10",
-    "webpack-hot-middleware": "^2.24.3"
+    "webpack-hot-middleware": "^2.24.3",
+    "webpack-md5-hash": "^0.0.6"
   },
   "browserslist": [
     "> 1%",

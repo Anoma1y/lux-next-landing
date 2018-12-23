@@ -33,30 +33,11 @@ module.exports = (options) => ({
         ]
       },
       {
-        test: /\.(jpg|png|gif)$/,
-        use: [
-          'file-loader',
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              query: {
-                gifsicle: {
-                  interlaced: true
-                },
-                mozjpeg: {
-                  progressive: true
-                },
-                optipng: {
-                  optimizationLevel: 7
-                },
-                pngquant: {
-                  quality: '65-90',
-                  speed: 4
-                }
-              }
-            },
-          },
-        ],
+        test: /\.(png|jpg|gif)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+        },
       },
     ],
   },
@@ -67,13 +48,13 @@ module.exports = (options) => ({
       },
     })
   ]),
-  resolve: {
-    modules: ['src', 'node_modules'],
-    extensions: [
-      '.js',
-      '.scss',
-    ]
-  },
+  // resolve: {
+  //   modules: ['src', 'node_modules'],
+  //   extensions: [
+  //     '.js',
+  //     '.scss',
+  //   ]
+  // },
   devtool: options.devtool,
   target: 'web',
   performance: options.performance || {},
