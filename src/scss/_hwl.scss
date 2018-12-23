@@ -10,27 +10,33 @@
       flex-flow: column wrap;
     }
   }
+
   &-item {
     flex: 1 1 374px;
     position: relative;
     margin-left: 1em;
     margin-right: 1em;
+
     &:first-child {
       margin-left: 0;
     }
+
     &:last-child {
       margin-right: 0;
     }
     @media (max-width: $break-xs) {
       flex: 1 1 100%;
       margin: 1em 0;
+
       &:first-child {
         margin-top: 0;
       }
+
       &:last-child {
         margin-bottom: 0;
       }
     }
+
     &_title {
       line-height: 40px;
       font-size: 1.5em;
@@ -40,6 +46,7 @@
         font-size: 20px;
       }
     }
+
     &_description {
       line-height: 27px;
       font-size: 1em;

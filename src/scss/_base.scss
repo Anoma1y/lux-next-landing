@@ -1,8 +1,9 @@
 @import "vars";
 
 body {
-  font-size: 16px;
   line-height: 1;
+  font-size: 16px;
+
   *, *:after, &:before {
     box-sizing: border-box;
   }
@@ -21,7 +22,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
-  max-width: 1440px;
+  max-width: $wrapper-width;
   margin: 0 auto;
   position: relative;
 }
@@ -29,34 +30,40 @@ p, h1, h2, h3, h4, h5, h6 {
 .site_btn {
   display: inline-block;
   text-decoration: none;
-  border-radius: 31px;
+  border-radius: 2rem;
   font-weight: 500;
-  line-height: 16px;
-  font-size: 16px;
+  line-height: 1rem;
+  font-size: 1rem;
   text-align: center;
   font-family: $font-main;
   color: $white;
   padding: 1em 1.5em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  margin-left: .5em;
+  margin-right: .5em;
   background-color: $dark-blue;
-  transition: background-color 100ms linear;
+  transition: background-color .1s linear;
+
   &:hover {
     background-color: darken($dark-blue, 5%);
   }
+
   &:first-child {
     margin-left: 0;
   }
+
   &:last-child {
     margin-right: 0;
   }
+
   &__transparent {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     border: 1px solid $white;
+
     &:hover {
-      background-color: rgba(0,0,0,0.1);
+      background-color: rgba(0, 0, 0, .1);
     }
   }
+
   &__padding-longeg {
     padding-left: 3.5em;
     padding-right: 3.5em;
@@ -68,18 +75,21 @@ p, h1, h2, h3, h4, h5, h6 {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
+
   &_content {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
   }
+
   &_title {
     position: relative;
     font-weight: normal;
     font-size: 33px;
     color: $gray20;
     margin-bottom: 1em;
+
     &:after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 35px;
@@ -89,6 +99,7 @@ p, h1, h2, h3, h4, h5, h6 {
       border-radius: 5px;
     }
   }
+
   &_text {
     margin: 1.4375em 0;
     font-weight: normal;
