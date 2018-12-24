@@ -48,13 +48,13 @@ module.exports = (options) => ({
       },
     })
   ]),
-  // resolve: {
-  //   modules: ['src', 'node_modules'],
-  //   extensions: [
-  //     '.js',
-  //     '.scss',
-  //   ]
-  // },
+  resolve: {
+    modules: ['src', 'node_modules'],
+    extensions: [
+      '.js',
+      '.scss',
+    ]
+  },
   devtool: options.devtool,
   target: 'web',
   performance: options.performance || {},

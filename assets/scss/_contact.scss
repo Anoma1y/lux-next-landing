@@ -143,5 +143,9 @@
       font-size: 16px;
       color: $gray20;
     }
+
+    @media (max-width: $break-xs) {
+      width: 100%;
+    }
   }
 }
