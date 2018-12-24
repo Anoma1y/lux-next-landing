@@ -7,8 +7,8 @@
     "build": "cross-env NODE_ENV=production webpack --env=production --config=prod.config.js --mode=production --color -p --progress --hide-modules --display-optimization-bailout",
     "dev": "webpack-dev-server --env=development --config=./dev.config.js --mode=development",
     "prettify": "prettier --write src/**",
-    "lint:css": "stylelint 'src/scss/**'",
-    "lint:css:fix": "stylelint 'src/scss/**' --fix"
+    "lint:css": "stylelint 'assets/scss/**'",
+    "lint:css:fix": "stylelint 'assets/scss/**' --fix"
   },
   "author": "LuxHolding",
   "license": "ISC",
