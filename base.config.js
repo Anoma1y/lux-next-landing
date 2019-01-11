@@ -33,6 +33,14 @@ module.exports = (options) => ({
         ]
       },
       {
+        test: /\.(eot|svg|otf|ttf|woff|woff2)$/,
+        exclude: /node_modules/,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]'
+        }
+      },
+      {
         test: /\.(png|jpg|gif)$/,
         loader: 'file-loader',
         options: {
